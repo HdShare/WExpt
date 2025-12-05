@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.devtools.ksp)
 }
 
 android {
@@ -13,8 +14,12 @@ android {
         targetSdk = 36
         versionCode = 1
         versionName = "1.0"
+        buildConfigField("String", "APP_NAME", "\"WExpt\"")
     }
 
+    buildFeatures {
+        buildConfig = true
+    }
     buildTypes {
         release {
             isMinifyEnabled = true
@@ -44,4 +49,10 @@ kotlin {
 }
 
 dependencies {
+    implementation(libs.annotation)
+    compileOnly(libs.xposed.api)
+    implementation(libs.yukihookapi.api)
+    ksp(libs.yukihookapi.ksp.xposed)
+    implementation(libs.kavaref.core)
+    implementation(libs.kavaref.extension)
 }
