@@ -17,6 +17,9 @@ android {
         versionName = "1.0.0"
         buildConfigField("String", "APP_NAME", "\"WExpt\"")
     }
+    androidResources {
+        additionalParameters += listOf("--allow-reserved-package-id", "--package-id", "0x78")
+    }
 
     buildFeatures {
         buildConfig = true

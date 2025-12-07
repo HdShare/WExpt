@@ -1,0 +1,62 @@
+const exptConfigs = [
+  {
+    name: "快捷语音输入(8.0.62+)",
+    key: "clicfg_chatting_voice_input",
+    trueVal: "MQ==",
+    falseVal: "MA==",
+  },
+  {
+    name: "聊天实况发送(8.0.63+)",
+    key: "clicfg_chatting_c2c_live_send_v4",
+    trueVal: "MQ==",
+    falseVal: "MA==",
+  },
+  {
+    name: "半屏通知回复(8.0.64+)",
+    key: "clicfg_notification_half_screen_chat_enable_new",
+    trueVal: "MQ==",
+    falseVal: "MA==",
+  },
+  {
+    name: "多选分析聊天(8.0.65+)",
+    key: "clicfg_yuanbao_analyze_chat_records_entrance",
+    trueVal: "MQ==",
+    falseVal: "MA==",
+  },
+  {
+    name: "多选分析聊天允许单聊(8.0.65+)",
+    key: "clicfg_yuanbao_analyze_private_chat",
+    trueVal: "MQ==",
+    falseVal: "MA==",
+  },
+  {
+    name: "聊天长按菜单总结文章(8.0.65+)",
+    key: "clicfg_yuanbao_summary_entrance",
+    trueVal: "MQ==",
+    falseVal: "MA==",
+  },
+  {
+    name: "元宝制作头像(8.0.65+)",
+    key: "clicfg_yuanbao_making_avatar_enable",
+    trueVal: "MQ==",
+    falseVal: "MA==",
+  },
+  {
+    name: "新设置页(8.0.66+)",
+    key: "clicfg_new_setting",
+    trueVal: "MQ==",
+    falseVal: "MA==",
+  },
+  {
+    name: "新设置页搜索(8.0.66+)",
+    key: "clicfg_setting_search",
+    trueVal: "MQ==",
+    falseVal: "MA==",
+  },
+  {
+    name: "批量撤回(8.0.66+)",
+    key: "clicfg_batch_revoke_msg_enable",
+    trueVal: "MQ==",
+    falseVal: "MA==",
+  },
+];
