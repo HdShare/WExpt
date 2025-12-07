@@ -11,6 +11,12 @@ const exptConfigs = [
     trueVal: "MQ==",
     falseVal: "MA==",
   },
+    {
+    name: "证书警告弹窗(8.0.62+)",
+    key: "clicfg_webview_ssl_error_dialog",
+    trueVal: "MQ==",
+    falseVal: "MA==",
+  },
   {
     name: "聊天实况发送(8.0.63+)",
     key: "clicfg_chatting_c2c_live_send_v4",
