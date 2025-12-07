@@ -4,6 +4,7 @@ import android.widget.FrameLayout
 import com.highcapable.kavaref.KavaRef.Companion.asResolver
 import com.highcapable.kavaref.KavaRef.Companion.resolve
 import com.highcapable.yukihookapi.hook.entity.YukiBaseHooker
+import com.highcapable.yukihookapi.hook.factory.injectModuleAppResources
 import me.hd.wexpt.hook.HostData.toAppClass
 import me.hd.wexpt.utils.webview.WebConfig
 import me.hd.wexpt.utils.webview.WebJsApi
@@ -48,7 +49,7 @@ object SettingHooker : YukiBaseHooker() {
             before {
                 val url = args(0).cast<String>()
                 if (URL(url).host == URL(WebConfig.getUrl()).host) {
-                    val webView = instance<FrameLayout>()
+                    val webView = instance<FrameLayout>().apply { context.injectModuleAppResources() }
                     val webViewWrapper = WebViewWrapper.get(webView)
                     webViewWrapper.addJavascriptInterface(WebJsApi(), "WExpt")
                     webViewWrapper.loadDataWithBaseURL("file:///android_asset/setting/", WebConfig.getHtml())
