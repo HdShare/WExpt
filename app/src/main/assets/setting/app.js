@@ -19,21 +19,21 @@ function save() {
 
 function initExptPage() {
   const container = document.getElementById("expt-container");
-  exptConfigs.forEach((config) => {
+    exptConfigs.forEach((config) => {
     const label = document.createElement("label");
     label.className = "weui-cell weui-cell_active weui-check__label";
     label.setAttribute("for", config.key);
     label.innerHTML = `
-            <div class="weui-cell__hd">
-                <input type="checkbox" class="weui-check" id="${config.key}" />
-                <i class="weui-icon-checked"></i>
-            </div>
-            <div class="weui-cell__bd">
-                <p>${config.name}</p>
-            </div>
-        `;
+        <div class="weui-cell__hd">
+          <input type="checkbox" class="weui-check" id="${config.key}" ${config.defVal ? 'checked' : ''} />
+          <i class="weui-icon-checked"></i>
+        </div>
+        <div class="weui-cell__bd">
+          <p>${config.name}</p>
+        </div>
+      `;
     container.appendChild(label);
-  });
+    });
   const saveBtn = document.getElementById("save");
   if (saveBtn) {
     saveBtn.addEventListener("click", save);
