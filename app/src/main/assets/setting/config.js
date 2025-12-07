@@ -1,5 +1,11 @@
 const exptConfigs = [
   {
+    name: "新版网页浮窗(8.0.61+)",
+    key: "clicfg_webview_new_float_ball",
+    trueVal: "MQ==",
+    falseVal: "MA==",
+  },
+  {
     name: "快捷语音输入(8.0.62+)",
     key: "clicfg_chatting_voice_input",
     trueVal: "MQ==",
@@ -8,6 +14,18 @@ const exptConfigs = [
   {
     name: "聊天实况发送(8.0.63+)",
     key: "clicfg_chatting_c2c_live_send_v4",
+    trueVal: "MQ==",
+    falseVal: "MA==",
+  },
+  {
+    name: "截图组件重构(8.0.63+)",
+    key: "clicfg_new_screenshotutil",
+    trueVal: "MQ==",
+    falseVal: "MA==",
+  },
+  {
+    name: "截图转发入口(8.0.63+)",
+    key: "clicfg_screenshot_share_service",
     trueVal: "MQ==",
     falseVal: "MA==",
   },

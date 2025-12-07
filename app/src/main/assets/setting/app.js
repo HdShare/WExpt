@@ -5,7 +5,6 @@ function save() {
       ? config.trueVal
       : config.falseVal,
   }));
-  console.log("保存配置:", args);
   if (window.WExpt && WExpt.putExptArgs) {
     try {
       WExpt.putExptArgs(JSON.stringify(args));
