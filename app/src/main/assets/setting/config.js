@@ -14,13 +14,6 @@ const exptConfigs = [
     falseVal: "MA==",
   },
   {
-    name: "证书警告弹窗(8.0.62+)",
-    key: "clicfg_webview_ssl_error_dialog",
-    defVal: false,
-    trueVal: "MQ==",
-    falseVal: "MA==",
-  },
-  {
     name: "聊天实况发送(8.0.63+)",
     key: "clicfg_chatting_c2c_live_send_v4",
     defVal: true,
@@ -37,6 +30,13 @@ const exptConfigs = [
   {
     name: "截图转发入口(8.0.63+)",
     key: "clicfg_screenshot_share_service",
+    defVal: true,
+    trueVal: "MQ==",
+    falseVal: "MA==",
+  },
+  {
+    name: "朋友圈视频进度条(8.0.64+)",
+    key: "clicfg_sns_use_expandable_video_seek_bar",
     defVal: true,
     trueVal: "MQ==",
     falseVal: "MA==",
